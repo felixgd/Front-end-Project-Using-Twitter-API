@@ -456,15 +456,14 @@ function search_data(date_from,date_class){ //function for the search by date
             url = 'http://localhost:7890/1.1/search/tweets.json?q='+user_account+'&count='+$("#number_of_tweets").val()+'&until='+date_from[2]+"-"+date_from[0]+"-"+date_from[1]+"&result_type=recent"; 
         break;
     }
-    console.log(url);
+
     $.ajax({
         url: url,
         success:function(resp){
             data = JSON.parse(resp);
             if(data.statuses.length != 0){ //verify empty response
-                console.log("here");
+                
             data = data.statuses;
-            console.log(data);
             user_data = data[0].user;
             
             
@@ -528,7 +527,6 @@ function hideLoader(toggle, is_settings) { //function for the loader SVG
 }
 
 function data_sort(total_data,user_account){ //this function sorts the data to the correct table and parse it
-    console.log(total_data);
     let tweet_created_at;   //aux variable for the date format
     let data_to_render = []; //parsed data, this is send to the render function
     let aux_array = []; //aux array for the parsed data
