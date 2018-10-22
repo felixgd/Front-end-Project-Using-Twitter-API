@@ -1,0 +1,80 @@
+html{
+    min-height: 100%
+}
+
+body {
+    overflow-x:hidden; 
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    background: -moz-linear-gradient(top,  #9fd3f3 0%, #1da1f2 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1da1f2), color-stop(50%,#1da1f2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #9fd3f3 0%,#1da1f2 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #9fd3f3 0%,#1da1f2 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #9fd3f3 0%,#1da1f2 50%); /* IE10+ */
+    background: linear-gradient(to bottom,  #d9e8f1 0%,#1da1f2 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9fd3f3', endColorstr='#1da1f2',GradientType=0 ); /* IE6-8 */
+    
+  }
+
+.dataTables_wrapper .myfilter .dataTables_filter {
+    float:left;
+}
+
+.user_account{
+    margin-top: 5%;
+    margin-bottom:5%;
+}
+
+.user_account > a{
+    color:#212529;
+}
+
+.nav-tabs .nav-link.active {
+    font-weight:bold;
+    background-color: transparent;
+    border-bottom:3px solid #212529;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+.nav-item > a{
+    color:#212529;
+}
+
+.nav-tabs .nav-link {
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+#tabs{
+    border-bottom-color: #212529
+}
+
+loader-background {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.back-to-top {
+background: none;
+margin: 0;
+position: fixed;
+bottom: 2%;
+right: 4%;
+width: 70px;
+height: 70px;
+z-index: 100;
+display: none;
+text-decoration: none;
+color: #212529;
+}
+
+.back-to-top i {
+  font-size: 60px;
+}
