@@ -15,3 +15,4 @@ Start the static and proxy servers:
 
 This server will help you to get Twitter's API to send you tweets without you needing to do any authentication.  You don't need to modify server.js at all. 
 
+Open http://localhost:3000 to see the App
