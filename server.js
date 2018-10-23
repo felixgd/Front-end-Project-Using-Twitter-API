@@ -1,4 +1,4 @@
-const spawn = require('cross-spawn');
+var spawn = require('child_process').spawn;
 var express = require('express');
 var app = express();
 var path    = require("path");
